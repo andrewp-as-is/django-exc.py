@@ -12,6 +12,16 @@ https://readme42.com
 $ [sudo] pip install django-exc
 ```
 
+##### `settings.py`
+```python
+INSTALLED_APPS+ = ['django_exc']
+```
+
+##### migrate
+```bash
+$ python manage.py django_exc
+```
+
 #### Examples
 save exception:
 ```python
