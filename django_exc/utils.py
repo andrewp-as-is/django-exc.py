@@ -5,7 +5,7 @@ from traceback import format_tb
 from .models import Exc
 
 
-def save_exc(self):
+def save_exc():
     exc, exc_value, tb = sys.exc_info()
     Exc(
         exc_type=exc.__module__ + '.' + exc.__name__ if exc.__module__ else exc.__name__,
